@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,7 +6,7 @@ body {
   background-color: #f8f9fa;
 }
 
-/* Navbar */
+
 .navbar {
   background: darkslategray;
   padding: 15px 0;
