@@ -77,7 +77,7 @@ app.post('/Signup', async (req, res) => {
   }
 });
 
-// Signin Route
+
 app.post('/signin', async (req, res) => {
   const { username, password } = req.body;
   console.log(username,password);
@@ -85,7 +85,7 @@ app.post('/signin', async (req, res) => {
   console.log(user);
   if(user) 
   {
-    const token = jwt.sign({ userId: user._id, username }, SECRET_KEY, { expiresIn: '1h' });//this token helps the user to remain signed in for an 1hour
+    const token = jwt.sign({ userId: user._id, username }, SECRET_KEY, { expiresIn: '1h' });
       res.json({ message: 'Signin successful', token });
   } 
   else 
